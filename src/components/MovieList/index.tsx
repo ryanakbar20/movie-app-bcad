@@ -102,8 +102,10 @@ const MovieList: React.FC = () => {
 
   return (
     <div>
-      <SearchBar onSearch={handleSearch} />
-      <FilterMenu onFilter={handleFilter} activeCategory={activeCategory} />
+      <div className="sticky top-0 bg-gray-100 dark:bg-gray-900 py-4">
+        <SearchBar onSearch={handleSearch} />
+        <FilterMenu onFilter={handleFilter} activeCategory={activeCategory} />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredMovies.map((movie) => (
           <MovieCard
