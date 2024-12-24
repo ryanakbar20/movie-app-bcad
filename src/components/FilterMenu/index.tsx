@@ -10,7 +10,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   const categories = ["popular", "now_playing", "top_rated", "upcoming"];
 
   return (
-    <div className="mb-4 flex gap-4">
+    <div className="mb-4 flex gap-4 flex-wrap">
       {categories.map((category) => (
         <button
           key={category}

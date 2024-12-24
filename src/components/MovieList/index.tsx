@@ -102,7 +102,7 @@ const MovieList: React.FC = () => {
 
   return (
     <div>
-      <div className="sticky top-0 bg-gray-100 dark:bg-gray-900 py-4">
+      <div className="sticky top-0 bg-gray-100 dark:bg-gray-900 py-4 -mx-2">
         <SearchBar onSearch={handleSearch} />
         <FilterMenu onFilter={handleFilter} activeCategory={activeCategory} />
       </div>
